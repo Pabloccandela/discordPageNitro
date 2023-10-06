@@ -518,7 +518,9 @@ button:hover{
         gap: 20px;
     }    
     .ventajas{
-        margin: 80px 80px;
+        margin: 80px 0px;
+        width: 800px;
+        margin: 0  auto;
     }
     
 }
