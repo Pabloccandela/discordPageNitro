@@ -1,8 +1,13 @@
- 
 body{
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
+}
+
+button:hover{
+    box-shadow: 10px 10px 26px -10px rgba(0,0,0,1);
+-webkit-box-shadow: 10px 10px 26px -10px rgba(0,0,0,1);
+-moz-box-shadow: 10px 10px 26px -10px rgba(0,0,0,1);
 }
 /* Barra de navegacion */
 
@@ -15,8 +20,8 @@ body{
     top: 0;
     right: -250px;
     z-index: 100;
-    width: 250px;
     height: 100%;
+    width: 250px;
     background-color: #fff;
     border-radius: 10px 0 0 10px;
 }
@@ -50,7 +55,7 @@ body{
     background-color: #fff;
     border: none;
     border-radius: 30px;
-    padding: 0px 12px;
+    padding: 5px 22px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +64,7 @@ body{
 }
 
 .downloadButton a{
-    font-size: 8px;
+    font-size: 12px;
     font-weight: lighter;
     text-decoration: none;
     color: #000;
@@ -138,7 +143,7 @@ body{
 }
 /* mediaquery */
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 700px){
     .nav{
         right: 0;
     }
@@ -157,8 +162,8 @@ body{
     .nav-link a{
         color: #fff;
         text-decoration: none;
-        font-size: 10px;
-        font-weight: 600;
+        font-size: 13px;
+        font-weight: 700;
     }
 
     .nav-links-container{
@@ -241,7 +246,7 @@ body{
     display: none;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 700px){
     .header{
         width: 100%;
         background: none;
@@ -267,15 +272,15 @@ body{
     }
     
     .header-text p{
-        font-size: 13px;
+        font-size: 15px;
         color: #fff;
         padding: 0 0;
         font-weight: 300;
     }
     
     .header-text h1{
-        font-size:35px;
-        line-height: 35px;
+        font-size:45px;
+        line-height: 45px;
         font-weight: 300;
         color: #fff;
         margin: 50px 0 20px 0;
@@ -297,7 +302,7 @@ body{
 
     .pc-background{
         display: block;
-        height: 150%;
+        height: 130%;
         width: 140%;
         position: absolute;
         object-fit: cover;
@@ -387,17 +392,18 @@ body{
     margin: 10px;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 700px){
 
     .cards-container{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         padding: 0;
         width: 100%;
-        margin-top: 50px;
-        gap: 10px;
+        margin-top: -100px;
+        gap: 30px;
     }
     
     .card1{
@@ -413,7 +419,7 @@ body{
     }
     
     .card1,.card2,.card3{
-        padding: 10px 30px;
+        padding: 10px 20px;
         border-radius: 5px;
         width: 200px;
         color: #fff;
@@ -460,6 +466,61 @@ body{
         border-radius: 20px;
         font-weight: bold;
     }
+}
+/* ventajas */
+.ventajas{
+    margin: 80px 40px;
+}
+
+.ventajas-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.title-ventajas{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000;
+    font-size: 37px;
+    text-align: center;
+}
+.ventaja{
+    max-width: 20%;
+    min-width: 250px;
+    height: 270px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ventaja-title{
+    text-align: center;
+    font-size: 17px;
+}
+
+.ventaja-img img{
+    width: 100%;
+}
+
+@media screen and (min-width: 700px){
+    .ventajas-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }    
+    .ventajas{
+        margin: 80px 80px;
+    }
+    
 }
 
 /* table */
@@ -510,7 +571,7 @@ body{
     text-align: center;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 700px){
     .table-characteristic{
         margin: 40px;
         border-radius: 30px;
@@ -537,7 +598,7 @@ body{
     display: none;
 }
 .response p{
-    font-size: 9.7px;
+    font-size: 11px;
     line-height: 15px;
     margin: 0;
     padding: 0;
@@ -554,7 +615,7 @@ body{
 .label-text{
     font-weight: bold;
     color: #494949;
-    font-size: 11.5px;
+    font-size: 15px;
     margin: 0;
 }
 
@@ -605,7 +666,7 @@ body{
     display: none;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 700px){
     .answers{
         margin: 50px 40px;
         position: relative;
@@ -645,7 +706,7 @@ body{
 .banner-title{
     font-family: 'Josefin Sans', sans-serif;
     color: #fff;
-    font-size: 25px;
+    font-size: 45px;
     text-align: center;
 }
 
@@ -653,14 +714,14 @@ body{
     border: none;
     background-color: #fff;
     border-radius: 30px;
-    padding: 9px 0;
-    font-size: 12px;
+    padding: 12px 5px;
+    font-size: 16px;
     width: 120px;
 }
 
 
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 700px){
     .banner {
         background: url(./src/img/banner.svg) left, url(./src/img/banner2.svg) right,linear-gradient(135deg, #8547c6 10%, #b845c1 50%, #ab5d8a);
         background-repeat: no-repeat;
@@ -701,7 +762,7 @@ body{
     gap: 20px;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 700px){
     .footer-container{
         display: flex;
         flex-direction: row;
