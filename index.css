@@ -302,7 +302,7 @@ button:hover{
 
     .pc-background{
         display: block;
-        height: 130%;
+        height: 140%;
         width: 140%;
         position: absolute;
         object-fit: cover;
